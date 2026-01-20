@@ -105,7 +105,6 @@
 
     glidepoint_listener: glidepoint_listener {
         compatible = "zmk,input-listener";
-        status = "disabled";
         device = <&glidepoint_split>;
         input-processors = <&zip_xy_scaler 150 60>;
         scroller {
