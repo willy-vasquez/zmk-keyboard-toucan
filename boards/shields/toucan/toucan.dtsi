@@ -117,18 +117,5 @@
                 &zip_scroll_scaler 1 2
             >;
         };
-        right_clicker {
-            layers = <3>;
-            input-processors = <&zip_tap_to_rclk>;
-        };
-    };
-
-    input_processors {
-        zip_tap_to_rclk: zip_tap_to_rclk {
-            compatible = "zmk,input-processor-behaviors";
-            #input-processor-cells = <0>;
-            codes = <INPUT_BTN_0>;
-            bindings = <&mkp RCLK>;
-        };
     };
 };
